@@ -9,8 +9,8 @@ const baseTheme: ThemeOptions = {
     values: {
       xs: 0,
       sm: 600,
-      md: 960,
-      lg: 1480,
+      md: 960 + 280,
+      lg: 1200 + 280,
       xl: 1920,
     },
   },

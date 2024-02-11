@@ -2,7 +2,7 @@ import { CSSProperties } from 'react';
 import * as CSS from 'csstype';
 import curry from './curryExpandableProp';
 
-export const expandDisplayFlex = ({
+export const expandFlex = ({
   j,
   a,
   d,

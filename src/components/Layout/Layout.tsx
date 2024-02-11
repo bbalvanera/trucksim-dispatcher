@@ -18,7 +18,7 @@ const Layout = ({ children }: PropsWithChildren<unknown>) => {
   return (
     <Suspense fallback={<Backdrop open>Cargando</Backdrop>}>
       <AppBar sx={sx}>
-        <Container maxWidth="lg" sx={{ display: 'flex', flexDirection: 'row' }} disableGutters>
+        <Container maxWidth="md" sx={{ display: 'flex', flexDirection: 'row' }} disableGutters>
           <Toolbar sx={{ flex: 1 }}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">Profiles</InputLabel>

@@ -5,7 +5,7 @@ import CenterCenterStack from '@components/CenterCenterStack';
 import { lazyImport } from '@core/utils/lazyImport';
 import { hideStartLoader } from '@core/utils/startLoader';
 
-const { Landing } = lazyImport(() => import('./landing'), 'Landing');
+const { Dispatcher } = lazyImport(() => import('./dispatcher'), 'Dispatcher');
 
 const ErrorPage = () => {
   const error = useRouteError();
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing />,
+        element: <Dispatcher />,
       },
     ],
   },

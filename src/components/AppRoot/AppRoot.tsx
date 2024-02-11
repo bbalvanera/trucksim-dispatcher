@@ -6,13 +6,13 @@ import Layout from '@components/Layout';
 
 const AppRoot = () => {
   return (
-    <Layout>
-      <Suspense fallback={<Backdrop open>Cargando</Backdrop>}>
+    <Suspense fallback={<Backdrop open>Carganding!</Backdrop>}>
+      <Layout>
         <ContentLayout>
           <Outlet />
         </ContentLayout>
-      </Suspense>
-    </Layout>
+      </Layout>
+    </Suspense>
   );
 };
 
