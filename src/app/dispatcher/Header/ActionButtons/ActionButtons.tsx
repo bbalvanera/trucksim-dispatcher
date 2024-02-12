@@ -1,17 +1,17 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import useSx from './sx';
 
-export interface ActionButtonsProps {
-  t: any;
+export type ActionButtonsProps = {
   onUpdateGame?: VoidFunction;
   onLaunchGame?: VoidFunction;
-}
+};
 
-const ActionButtons = ({ t, onUpdateGame, onLaunchGame }: ActionButtonsProps) => {
+const ActionButtons = ({ onUpdateGame, onLaunchGame }: ActionButtonsProps) => {
   const sx = useSx();
+  const { t } = useTranslation();
 
   return (
     <Box sx={sx}>
@@ -25,4 +25,4 @@ const ActionButtons = ({ t, onUpdateGame, onLaunchGame }: ActionButtonsProps) =>
   );
 };
 
-export default withTranslation()(ActionButtons);
+export default ActionButtons;

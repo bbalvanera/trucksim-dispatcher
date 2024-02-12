@@ -4,9 +4,9 @@ import baseTheme from './base.theme';
 
 const primary = '#111827';
 const secondary = '#4f46e5';
-const info = '#43baff';
-const positive = '#4bd48b';
-const negative = '#f5592f';
+const info = '#2196f3';
+const success = '#4caf50';
+const error = '#f44336';
 const warning = '#ffc107';
 
 const shades = {
@@ -32,10 +32,10 @@ const myTheme: ThemeOptions = {
       main: secondary,
     },
     success: {
-      main: positive,
+      main: success,
     },
     error: {
-      main: negative,
+      main: error,
     },
     info: {
       main: info,

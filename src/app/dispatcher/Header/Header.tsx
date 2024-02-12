@@ -1,15 +1,15 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-import ActionButtons from '../ActionButtons';
+import ActionButtons from './ActionButtons';
 import useSx from './sx';
 
-export interface PageHeaderProps {
+export interface HeaderProps {
   profileName: string;
   savefileName: string;
 }
 
-const PageHeader = ({ profileName, savefileName }: PageHeaderProps) => {
+const Header = ({ profileName, savefileName }: HeaderProps) => {
   const sx = useSx();
 
   return (
@@ -25,4 +25,4 @@ const PageHeader = ({ profileName, savefileName }: PageHeaderProps) => {
   );
 };
 
-export default PageHeader;
+export default Header;

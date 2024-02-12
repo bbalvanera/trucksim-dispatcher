@@ -6,12 +6,28 @@ const resources = {
     translation: {
       updateGameBtn: 'Update Game',
       launchGameBtn: 'Launch Game',
+      'dispatcher.jobFrom': 'From',
+      'dispatcher.jobCompanyFrom': 'Company',
+      'dispatcher.jobTo': 'To',
+      'dispatcher.jobCompanyTo': 'Company',
+      'dispatcher.cargo': 'Cargo',
+      'dispatcher.addJobBtn': 'Add Job',
+      'dispatcher.addRandomJobBtn': 'Add random job',
+      'dispatcher.deleteJobListBtn': 'Delete job list',
     },
   },
   es: {
     translation: {
       updateGameBtn: 'Guardar Juego',
       launchGameBtn: 'Jugar Juego',
+      'dispatcher.jobFrom': 'Desde',
+      'dispatcher.jobCompanyFrom': 'Compañía',
+      'dispatcher.jobTo': 'Hacia',
+      'dispatcher.jobCompanyTo': 'Compañía',
+      'dispatcher.cargo': 'Carga',
+      'dispatcher.addJobBtn': 'Añadir Trabajo',
+      'dispatcher.addRandomJobBtn': 'Añadir trabajo aleatorio',
+      'dispatcher.deleteJobListBtn': 'Borrar lista',
     },
   },
 };

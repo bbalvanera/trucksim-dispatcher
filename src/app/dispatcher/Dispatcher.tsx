@@ -1,12 +1,12 @@
 import React from 'react';
-import PageBody from './PageBody';
-import PageHeader from './PageHeader';
+import Body from './Body';
+import Header from './Header';
 
 const Dispatcher = () => {
   return (
     <>
-      <PageHeader profileName="Profile Name" savefileName="Save name" />
-      <PageBody />
+      <Header profileName="Profile Name" savefileName="Save name" />
+      <Body />
     </>
   );
 };
