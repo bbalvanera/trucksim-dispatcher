@@ -1,12 +1,17 @@
 import React from 'react';
+import ContentLayout from '@components/ContentLayout';
 import Body from './Body';
 import Header from './Header';
+import Subheader from './Subheader';
 
 const Dispatcher = () => {
   return (
     <>
-      <Header profileName="Profile Name" savefileName="Save name" />
-      <Body />
+      <Header />
+      <ContentLayout>
+        <Subheader profileName="Profile Name" savefileName="Save name" />
+        <Body />
+      </ContentLayout>
     </>
   );
 };

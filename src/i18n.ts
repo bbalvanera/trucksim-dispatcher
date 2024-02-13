@@ -14,6 +14,10 @@ const resources = {
       'dispatcher.addJobBtn': 'Add Job',
       'dispatcher.addRandomJobBtn': 'Add random job',
       'dispatcher.deleteJobListBtn': 'Delete job list',
+      'dispatcher.profileSelect': 'Profiles',
+      'dispatcher.profileSelectPlaceholder': 'Select your profile',
+      'dispatcher.saveFileSelect': 'Saved Game',
+      'dispatcher.saveFileSelectPlaceholder': 'Select a saved game',
     },
   },
   es: {
@@ -28,6 +32,10 @@ const resources = {
       'dispatcher.addJobBtn': 'Añadir Trabajo',
       'dispatcher.addRandomJobBtn': 'Añadir trabajo aleatorio',
       'dispatcher.deleteJobListBtn': 'Borrar lista',
+      'dispatcher.profileSelect': 'Perfiles',
+      'dispatcher.profileSelectPlaceholder': 'Selecciona tu perfil',
+      'dispatcher.saveFileSelect': 'Juego Guardado',
+      'dispatcher.saveFileSelectPlaceholder': 'Selecciona un juego guardado',
     },
   },
 };
