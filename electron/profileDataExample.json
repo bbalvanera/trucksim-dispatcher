@@ -1,0 +1,36 @@
+[
+  {
+    "user": "25104925",
+    "type": "ets",
+    "name": "Arcade",
+    "isRemote": true,
+    "path": "path/to/profile",
+    "saves": [
+      {
+        "name": "Save 1",
+        "path": "path/to/save1"
+      },
+      {
+        "name": "Save 2",
+        "path": "path/to/save2"
+      }
+    ]
+  },
+  {
+    "user": "25104925",
+    "type": "ets",
+    "name": "Arcade",
+    "isRemote": true,
+    "path": "path/to/profile",
+    "saves": [
+      {
+        "name": "Save 1",
+        "path": "path/to/save1"
+      },
+      {
+        "name": "Save 2",
+        "path": "path/to/save2"
+      }
+    ]
+  }
+]

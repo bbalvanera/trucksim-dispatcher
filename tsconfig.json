@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -23,5 +23,5 @@
       "@styles/*": ["styles/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "electron"]
 }

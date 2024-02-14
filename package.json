@@ -2,25 +2,20 @@
   "name": "trucksim-dispatcher",
   "version": "0.1.0",
   "private": true,
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
     "start": "concurrently \"cross-env npm run craco-start\" \"wait-on http://localhost:3000 && electron .\"",
     "craco-start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "electron": "electron .",
+    "compile": "tsc --project electron/tsconfig.json --outdir dist",
     "pretty": "prettier -c \"src/**/*.{js,jsx,ts,tsx,json,css,scss}\"",
     "pretty:fix": "prettier -w \"src/**/*.{js,jsx,ts,tsx,json,css,scss}\"",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "precommit": "npm run pretty & npm run lint",
     "prepare": "husky"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -51,7 +46,8 @@
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "winreg": "^1.2.5"
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
@@ -63,6 +59,7 @@
     "@types/node": "^16.18.80",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "@types/winreg": "^1.2.36",
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.3",
