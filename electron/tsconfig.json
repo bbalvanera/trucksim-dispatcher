@@ -5,18 +5,15 @@
 
   "compilerOptions": {
     "lib": ["es2022"],
-    "module": "ESNext",
+    "module": "Node16",
     "target": "es2022",
-
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node"
+    "moduleResolution": "Node16",
+    "rootDir": ".",
+    "outDir": "./dist"
   },
-  "baseUrl": "./",
-  "paths": {
-    "@utils/*": ["utils/*"]
-  },
-  "include": ["*.ts"]
+  "include": ["**/*.ts"]
 }

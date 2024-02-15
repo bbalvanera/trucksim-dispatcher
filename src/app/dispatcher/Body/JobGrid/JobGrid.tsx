@@ -6,12 +6,10 @@ export interface JobGridProps {
   sx?: SxDef;
 }
 
-const JobGrid = ({ sx, children }: PropsWithChildren<JobGridProps>) => {
-  return (
-    <Paper variant="outlined" sx={sx}>
-      {children}
-    </Paper>
-  );
-};
+const JobGrid = ({ sx, children }: PropsWithChildren<JobGridProps>) => (
+  <Paper variant="outlined" sx={sx}>
+    {children}
+  </Paper>
+);
 
 export default JobGrid;

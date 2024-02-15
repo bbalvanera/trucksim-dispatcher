@@ -1,5 +1,5 @@
-import { config as dotenvConfig } from 'dotenv';
-import appInit from './appInit.js';
+import * as dotenv from 'dotenv';
+import app from './app.js';
 
-dotenvConfig();
-appInit();
+dotenv.config();
+app.run();

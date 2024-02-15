@@ -9,18 +9,16 @@ export interface TsdAutocompleteProps {
   helperText?: string;
 }
 
-const TsdAutocomplete = ({ label, options, error, helperText }: TsdAutocompleteProps) => {
-  return (
-    <div>
-      <Autocomplete
-        disablePortal
-        options={options}
-        renderInput={(params) => (
-          <TextField {...params} label={label} error={error} helperText={helperText || ' '} />
-        )}
-      />
-    </div>
-  );
-};
+const TsdAutocomplete = ({ label, options, error, helperText }: TsdAutocompleteProps) => (
+  <div>
+    <Autocomplete
+      disablePortal
+      options={options}
+      renderInput={(params) => (
+        <TextField {...params} label={label} error={error} helperText={helperText || ' '} />
+      )}
+    />
+  </div>
+);
 
 export default TsdAutocomplete;

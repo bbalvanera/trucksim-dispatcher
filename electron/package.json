@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "imports": {
+    "#utils/*.js": "./utils/*.js",
+    "#common/*.js": "./common/*.js"
+  }
 }

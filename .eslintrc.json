@@ -27,7 +27,6 @@
   "plugins": ["import"],
   "root": true,
   "rules": {
-    "import/named": ["off"],
     "import/order": [
       "error",
       {
@@ -72,14 +71,12 @@
         "packageDir": "./"
       }
     ],
-    "arrow-body-style": ["off"],
-    "no-return-await": ["off"],
+    "arrow-body-style": ["error", "as-needed"],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
     "react/jsx-props-no-spreading": ["off"],
-    "@typescript-eslint/indent": ["off"],
     "@typescript-eslint/no-unused-vars": ["warn"],
-    "@typescript-eslint/no-explicit-any": ["off"],
-    "@typescript-eslint/no-non-null-assertion": ["off"],
-    "@typescript-eslint/lines-between-class-members": "off",
-    "@typescript-eslint/return-await": ["warn", "always"]
+    "@typescript-eslint/return-await": ["warn", "always"],
+    "@typescript-eslint/lines-between-class-members": ["off"],
+    "@typescript-eslint/no-explicit-any": ["off"]
   }
 }

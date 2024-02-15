@@ -4,16 +4,14 @@ import Body from './Body';
 import Header from './Header';
 import Subheader from './Subheader';
 
-const Dispatcher = () => {
-  return (
-    <>
-      <Header />
-      <ContentLayout>
-        <Subheader profileName="Profile Name" savefileName="Save name" />
-        <Body />
-      </ContentLayout>
-    </>
-  );
-};
+const Dispatcher = () => (
+  <>
+    <Header />
+    <ContentLayout>
+      <Subheader profileName="Profile Name" savefileName="Save name" />
+      <Body />
+    </ContentLayout>
+  </>
+);
 
 export default Dispatcher;

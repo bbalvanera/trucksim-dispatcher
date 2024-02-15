@@ -10,12 +10,10 @@ const JobGridCell = ({
   align,
   className,
   ...boxProps
-}: PropsWithChildren<JobGridCellProps>) => {
-  return (
-    <Box className={`${className} ${align}`} {...boxProps}>
-      {children}
-    </Box>
-  );
-};
+}: PropsWithChildren<JobGridCellProps>) => (
+  <Box className={`${className} ${align}`} {...boxProps}>
+    {children}
+  </Box>
+);
 
 export default JobGridCell;

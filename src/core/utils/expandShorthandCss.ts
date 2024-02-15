@@ -12,15 +12,13 @@ export const expandFlex = ({
   a?: CSS.Property.AlignItems;
   d?: CSS.Property.FlexDirection;
   g?: CSS.Property.Gap<(string & object) | number>;
-}): Pick<CSSProperties, 'display' | 'justifyContent' | 'alignItems' | 'flexDirection' | 'gap'> => {
-  return {
-    display: 'flex',
-    flexDirection: d,
-    justifyContent: j,
-    alignItems: a,
-    gap: g,
-  };
-};
+}): Pick<CSSProperties, 'display' | 'justifyContent' | 'alignItems' | 'flexDirection' | 'gap'> => ({
+  display: 'flex',
+  flexDirection: d,
+  justifyContent: j,
+  alignItems: a,
+  gap: g,
+});
 
 export const expandBorderTop = curry('borderTop');
 export const expandBorder = curry('border');

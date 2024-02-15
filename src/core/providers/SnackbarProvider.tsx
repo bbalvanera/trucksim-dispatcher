@@ -10,7 +10,7 @@ export interface ISnackbarContext {
   setType: (type: SnackbarType) => void;
 }
 
-const defaultSnackbarContext: ISnackbarContext = {} as any;
+const defaultSnackbarContext: ISnackbarContext = {} as unknown as ISnackbarContext;
 export const SnackbarContext = createContext<ISnackbarContext>(defaultSnackbarContext);
 
 const SnackbarProvider = ({ children }: PropsWithChildren<unknown>) => {

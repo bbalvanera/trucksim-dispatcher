@@ -4,11 +4,11 @@
   "private": true,
   "main": "dist/main.js",
   "scripts": {
-    "start": "concurrently \"cross-env npm run craco-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "start": "concurrently \"cross-env npm run craco-start\" \"npm run compile\" \"wait-on http://localhost:3000 && electron .\"",
     "craco-start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "electron": "electron .",
+    "electron": "npm run compile && electron .",
     "compile": "tsc --project electron/tsconfig.json --outdir dist",
     "pretty": "prettier -c \"src/**/*.{js,jsx,ts,tsx,json,css,scss}\"",
     "pretty:fix": "prettier -w \"src/**/*.{js,jsx,ts,tsx,json,css,scss}\"",
